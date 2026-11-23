@@ -1,8 +1,8 @@
-[English](README.md) | [简体中文](README.zh-CN.md)
+<h1 align="center">Slipwing</h1>
 
-<img src="assets/slipwing.png" width="96" alt="">
+<p align="center"><img src="assets/slipwing.png" width="120" alt=""></p>
 
-# Slipwing
+<p align="center"><a href="README.md">English</a> | <a href="README.zh-CN.md">简体中文</a></p>
 
 Slipwing is an independent Windows build of [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop)
 and [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser). It hands your AI agent your desktop apps

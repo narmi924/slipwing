@@ -71,6 +71,8 @@ $readme = $readme.Replace('](assets/', '](' + $raw + 'assets/')
 $readme = $readme.Replace('src="assets/', 'src="' + $raw + 'assets/')
 $readme = $readme.Replace('](README.zh-CN.md)', '](' + $repoUrl + '/blob/main/README.zh-CN.md)')
 $readme = $readme.Replace('](README.md)', '](' + $repoUrl + '#readme)')
+$readme = $readme.Replace('href="README.zh-CN.md"', 'href="' + $repoUrl + '/blob/main/README.zh-CN.md"')
+$readme = $readme.Replace('href="README.md"', 'href="' + $repoUrl + '#readme"')
 [IO.File]::WriteAllText((Join-Path $stage 'README.md'), $readme)
 
 $browser = Split-Path -Parent $browserBin.FullName

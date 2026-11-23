@@ -1,8 +1,8 @@
-[English](README.md) | [简体中文](README.zh-CN.md)
+<h1 align="center">Slipwing</h1>
 
-<img src="assets/slipwing.png" width="96" alt="">
+<p align="center"><img src="assets/slipwing.png" width="120" alt=""></p>
 
-# Slipwing
+<p align="center"><a href="README.md">English</a> | <a href="README.zh-CN.md">简体中文</a></p>
 
 Slipwing 是基于 [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) 和
 [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) 独立制作的 Windows 版本。它把你的桌面软件和浏览器交给
