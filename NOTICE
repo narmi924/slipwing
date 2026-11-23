@@ -1,0 +1,12 @@
+Slipwing
+Copyright 2026 narmi924
+
+The npm package bundles two programs built from forks of projects by Vercel,
+both licensed under the Apache License, Version 2.0:
+
+- agent-desktop, https://github.com/vercel-labs/agent-desktop
+  changed in https://github.com/narmi924/agent-desktop (personal branch)
+- agent-browser, https://github.com/vercel-labs/agent-browser
+  changed in https://github.com/narmi924/agent-browser (personal branch)
+
+Their license files ship with the package.

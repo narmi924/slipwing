@@ -1,0 +1,12 @@
+{
+  "name": "slipwing-source",
+  "private": true,
+  "description": "Source of the slipwing npm package. scripts/pack.ps1 builds the package.",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\""
+  }
+}
