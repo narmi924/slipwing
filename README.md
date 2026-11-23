@@ -8,7 +8,7 @@ Slipwing is an independent Windows build of [vercel-labs/agent-desktop](https://
 and [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser). It hands your AI agent your desktop apps
 and your browser, and leaves you the mouse.
 
-https://github.com/user-attachments/assets/673b53eb-883f-4f39-97fb-cb3aae6021bf
+https://github.com/user-attachments/assets/0c41c611-6209-4656-8929-49ed5464d110
 
 ## What your agent can do
 
