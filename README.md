@@ -56,7 +56,7 @@ then run slipwing skill and use it from now on.
 
 - **Your own Chrome:** turn on remote debugging once at `chrome://inspect/#remote-debugging`. After each restart, Chrome
   asks you to allow the first connection.
-- **MCP clients** such as Claude Desktop or Cursor:
+- **MCP clients** such as Claude Desktop or Cursor ([Glama listing](https://glama.ai/mcp/servers/narmi924/slipwing)):
   `{ "mcpServers": { "slipwing": { "command": "cmd", "args": ["/c", "slipwing", "mcp"] } } }`
 - **Your data** stays in `%USERPROFILE%\.agent-desktop`: routines, preferences and job records. Delete it to start over.
 - **Uninstall:** `npm uninstall -g slipwing`, then delete the `slipwing` folders under `%USERPROFILE%\.claude\skills`

@@ -45,7 +45,7 @@ npm install -g slipwing --allow-scripts=slipwing
 ```
 
 - **用你自己的 Chrome：** 在 `chrome://inspect/#remote-debugging` 打开远程调试，只做一次。之后每次重启 Chrome，第一次连接时 Chrome 会请你点一下允许。
-- **接进 MCP 客户端**（Claude 桌面版、Cursor 等）：
+- **接进 MCP 客户端**（Claude 桌面版、Cursor 等，[Glama 页面](https://glama.ai/mcp/servers/narmi924/slipwing)）：
   `{ "mcpServers": { "slipwing": { "command": "cmd", "args": ["/c", "slipwing", "mcp"] } } }`
 - **你的数据** 都在 `%USERPROFILE%\.agent-desktop`：动作、偏好、任务记录。删掉这个文件夹就回到初始状态。
 - **卸载：** 运行 `npm uninstall -g slipwing`，再删掉 `%USERPROFILE%\.claude\skills` 和 `%USERPROFILE%\.codex\skills` 下的 `slipwing` 文件夹。
