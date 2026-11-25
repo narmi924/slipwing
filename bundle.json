@@ -1,6 +1,6 @@
 {
   "name": "Slipwing",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "platform": "windows",
   "upstream": {
     "agent-desktop": {

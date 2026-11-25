@@ -84,6 +84,7 @@ Copy-Item -Path (Join-Path $BrowserRepo 'cli\src\native\a11y\LICENSE-axe-core*.t
 $manifest = [ordered]@{
     name = 'slipwing'
     version = $bundle.version
+    mcpName = 'io.github.narmi924/slipwing'
     description = 'Let any AI agent work in your Windows apps and browser in the background. A Windows build of agent-desktop and agent-browser.'
     license = 'Apache-2.0'
     repository = 'github:narmi924/slipwing'

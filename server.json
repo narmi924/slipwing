@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.narmi924/slipwing",
+  "title": "Slipwing",
+  "description": "Lets AI agents use Windows desktop apps and Chrome in the background. Windows 10/11 x64 only.",
+  "repository": {
+    "url": "https://github.com/narmi924/slipwing",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/narmi924/slipwing#readme",
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "slipwing",
+      "version": "0.1.2",
+      "runtimeHint": "npx",
+      "transport": { "type": "stdio" },
+      "packageArguments": [
+        { "type": "positional", "value": "mcp" }
+      ]
+    }
+  ]
+}
