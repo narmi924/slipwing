@@ -1,0 +1,57 @@
+name: Something didn't work / 没做成
+description: A step failed, did the wrong thing, or took your mouse or window. / 某一步失败、做错，或者抢了你的鼠标和窗口。
+labels: [bug]
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: What did you ask your agent to do? / 你让 agent 做什么？
+      placeholder: Look up tomorrow's weather in my Chrome and add it to the open Notepad window.
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: Which app or website? / 哪个软件或网站？
+      placeholder: Notepad 11.2410, a page on example.com
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / 实际发生了什么？
+      description: Paste the error or the last lines your agent printed. A screenshot helps for windows that draw their own interface. / 贴上报错或 agent 最后打出的几行；自绘界面的软件附一张截图更好。
+    validations:
+      required: true
+  - type: textarea
+    id: version
+    attributes:
+      label: Output of `slipwing --version`
+      render: json
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows
+      options:
+        - Windows 11
+        - Windows 10
+    validations:
+      required: true
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Agent
+      options:
+        - Claude Code
+        - Codex
+        - MCP client (Claude Desktop, Cursor, ...)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: ime
+    attributes:
+      label: Input method, if any / 输入法（如果有）
+      placeholder: Microsoft Pinyin

@@ -1,0 +1,22 @@
+name: A task you'd like it to do / 想交给它的事
+description: An errand between apps or websites that you still do by hand. / 一件你还在手动做的、跨软件或网站的杂活。
+labels: [enhancement]
+body:
+  - type: input
+    id: apps
+    attributes:
+      label: Which apps or websites? / 用到哪几个软件或网站？
+      placeholder: Chrome (an order page) and a desktop accounting app
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: What do you do by hand today? / 现在你手动怎么做？
+      placeholder: Every Friday I copy 20 order numbers from the page into the app, one field at a time.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: If you tried Slipwing, how far did it get? / 试过的话，它做到了哪一步？
