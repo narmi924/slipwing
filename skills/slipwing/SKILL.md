@@ -48,6 +48,7 @@ A document an app holds open is changed through that app, never by editing its f
 | "look at this window" | `return await desktop.read(WINDOW)` |
 | "what I selected" | `web.selection()` or `desktop.selection(WINDOW)` |
 | "open APP" | `await desktop.launch("APP")` |
+| "put this file into APP", "把视频拖进剪映" | `await desktop.drop(WINDOW, [FILE], TARGET)`, in the background (`desktop.md`) |
 
 ## 3. Ways of working
 

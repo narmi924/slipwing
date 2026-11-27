@@ -325,7 +325,7 @@ test('a script that does not parse, does not finish or fails an expectation is r
 test('a helper that does not exist names the ones that do', async () => {
   await assert.rejects(fakeTools({}).run(`await desktop.tick('w-1', '已核对');`), err => {
     assert.equal(err.code, 'INVALID_ARGS');
-    assert.match(err.message, /desktop\.tick is not a helper\. desktop has: apps, check, click, cmd, fill,/);
+    assert.match(err.message, /desktop\.tick is not a helper\. desktop has: apps, check, click, cmd, drop, fill,/);
     return true;
   });
 });

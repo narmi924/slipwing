@@ -25,6 +25,16 @@ slipwing desktop snapshot --window-id w-1234 -i --compact --since s8f3k2p9
   then `click`.
 - `type`, `double-click`, `right-click`, `focus`, `drag` and `mouse-*` need `--headed`: they bring the window forward and
   move the pointer, so ask the user first.
+- Putting files into an app (its import area, a timeline, a folder, a chat box, an upload zone): in a script,
+  `await desktop.drop(WINDOW, [FILES], TARGET)`, with TARGET a control name, text its picture shows, or `{x, y}` in
+  picture pixels. It works like dragging the files out of File Explorer, in the background: the pointer stays with the
+  user and the window may stay behind others. Files come from one folder; the app gets copies. It returns
+  `{files, effect}`; read the window to see the result. A place that takes no files is refused before anything moves.
+  Some apps bring their window to the front when files land; it is put back when Windows allows, otherwise the run
+  stops with `FOREGROUND_TAKEN`.
+- A drag inside an app has no background way. First look for what the drag does without dragging: a value
+  (`set-value`), a button, a menu item or a key. For files, use `desktop.drop`. Only then drag with the real mouse
+  (`drag --headed`), after the user agrees.
 - `type --headed` sends real keys: text with line breaks needs `--entry-mode multiline`; text goes in at the caret, so
   append with `--at end`. To only put text into a field, use `set-value`, line breaks included; no input method interferes.
 - A changed interface makes old refs stale: on `STALE_REF` take a new `snapshot`. Two identical controls give

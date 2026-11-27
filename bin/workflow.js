@@ -386,7 +386,7 @@ function scriptRunner({ session, chrome, space: own, 'timeout-ms': wait = '12000
   const flags = own ? spaceFlags() : chrome ? chromeFlags() : ['--session', session ?? BACKGROUND_SESSION];
   return (source, extra) => runScript(source, {
     browser: optionalBrowserBinary(), native: nativeBinary(), timeout, flow: perform, allowInput, allowFinal, startPace: pace, screen,
-    flags, lease: pageLease(flags, { own: !own && !chrome && !session }),
+    flags, lease: pageLease(flags, { own: !own && !chrome && !session }), liveTab: Boolean(chrome),
     env: chrome ? { ...process.env, AGENT_BROWSER_IDLE_TIMEOUT_MS: '0' } : process.env, ...extra,
   });
 }
