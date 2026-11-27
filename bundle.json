@@ -1,19 +1,19 @@
 {
   "name": "Slipwing",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "platform": "windows",
   "upstream": {
     "agent-desktop": {
       "repository": "https://github.com/vercel-labs/agent-desktop",
       "tag": "v1.3.1",
-      "commits_after_tag": 6,
-      "commit": "e8934a5e95e1d212c74ead95cd3e4701c04eca31"
+      "commits_after_tag": 10,
+      "commit": "ce2ddf07226346818de2a1c6bae9869cfad142df"
     },
     "agent-browser": {
       "repository": "https://github.com/vercel-labs/agent-browser",
-      "tag": "v0.43.0",
-      "commits_after_tag": 38,
-      "commit": "d2dfc782ccdd79d25a9b4f0acced9321789cecb8"
+      "tag": "v0.45.0",
+      "commits_after_tag": 8,
+      "commit": "3f43a2affd9944298104b7bb39d5f241aef85e91"
     }
   }
 }
