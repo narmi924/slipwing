@@ -219,6 +219,16 @@ test('a name the read does not show falls back to the label, and a hidden field 
   await assert.rejects(tools.run(`await web.fill('隐藏地址', 'x', { timeout: 0 });`), { code: 'ELEMENT_NOT_FOUND' });
 });
 
+test('the newer refusal wording for a field that cannot take focus is reported as missing too', async () => {
+  const tools = fakeTools({
+    'browser snapshot': { snapshot: FORM, origin: 'http://x/' },
+    'browser find': () => {
+      throw new Error('Element #addr (input) cannot be filled: focusing it does not move focus, so the text would go to whatever was focused before');
+    },
+  });
+  await assert.rejects(tools.run(`await web.fill('隐藏地址', 'x', { timeout: 0 });`), { code: 'ELEMENT_NOT_FOUND' });
+});
+
 test('an unconfirmed action becomes a warning and waitText returns the text it found', async () => {
   const tools = fakeTools({
     'browser snapshot': words => ({ snapshot: words[1] === '-c' ? '- StaticText "注册成功，会员编号 M8573"' : FORM }),
